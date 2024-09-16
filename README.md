@@ -108,14 +108,7 @@ To get started with ProfGPT, follow these steps:
 - Implement student feedback features to continually improve course recommendations.
 - Integrate a recommendation engine for students based on their academic performance and career goals.
 
----
 
-### **Contributors**
-- **[Your Name]**
-- **[Contributors' Names]**
 
 Feel free to contribute and make this project even more powerful!
 
----
-
-This README provides a clear project description, use case, and step-by-step setup instructions for users. Let me know if you want to tweak any part or add more details!
