@@ -1,114 +1,73 @@
-Here's a **README** for your LangChain-based Rate My Professor GPT model project:
+# ProfEssence-AI - Personalized Course Advisor
+
+ProfEssence-AI is a LangChain-based GPT-3.5 powered model designed to assist students in selecting the best courses based on their preferences, strengths, and professor reviews. Often, after their first semester, students feel overwhelmed by the sheer number of available courses (50+ courses), each with its own syllabus and unique professor. ProfEssence-AI provides an intuitive solution by offering personalized course recommendations through an interactive chatbot that fetches and analyzes professor reviews from platforms like Reddit and RateMyProfessor.
+
+The application features a *Next.js frontend chat interface* where students can engage with the AI model to receive tailored course suggestions based on their learning styles, competencies, and career aspirations.
+
+## 🚀 *Use Case*
+
+### *Problem*
+After the first semester, many students struggle to choose courses that align with their competencies and future goals. With over 50+ available courses, researching each syllabus, analyzing professor reviews, and assessing compatibility can be daunting.
+
+### *Solution*
+ProfEssence-AI simplifies the course selection process by combining *LangChain* with *GPT-3.5* and data from RateMyProfessor and Reddit to provide tailored course recommendations. Students receive suggestions based on their abilities and preferences, streamlining course registration and enhancing the overall academic experience.
+
+## 🎯 *Features*
+•⁠  ⁠*Personalized course suggestions*: Tailored recommendations based on the student's preferences and academic strengths.
+•⁠  ⁠*Professor review analysis*: Leverages reviews scraped from RateMyProfessor and Reddit to give deeper insights into each course.
+•⁠  ⁠*User-friendly chatbot interface: Built with **Next.js* for seamless interaction and a clean user experience.
+•⁠  ⁠*AI-powered insights: Powered by **GPT-3.5*, the model provides in-depth feedback on course structures, professor styles, and more.
 
 ---
 
-# **ProfGPT - Personalized Course Advisor**
+## ⚙️ *Tech Stack*
 
-### **Project Description**
-
-**ProfGPT** is a LangChain-based GPT-3.5 powered model that helps students select the best courses based on their preferences, strengths, and professor reviews. After the first semester, students often feel confused about which subjects to take due to the sheer number of available courses (50+ courses), each with its own syllabus and professor. To solve this, we built **ProfGPT**, an intuitive chatbot that fetches and analyzes professor reviews from Reddit and RateMyProfessor to give personalized course recommendations based on a student's competencies and interests. 
-
-The application features a **Next.js frontend chat interface** where students can interact with the AI model to receive course suggestions tailored to their unique learning styles and goals.
-
-### **Use Case**
-
-**Problem**: After the first semester, many students struggle to select courses that align with their competencies and career aspirations. With over 50+ subjects available, it can be overwhelming to research each course's syllabus, professor reviews, and compatibility with their strengths and interests.
-
-**Solution**: We created a personalized course advisor using LangChain and GPT-3.5, combined with data from platforms like RateMyProfessor and Reddit. Students can now get suggestions on courses that best match their abilities and preferences, improving the decision-making process for course registration.
-
-### **Features**
-- **Personalized course suggestions** based on student choices and preferences.
-- **Analysis of professor reviews** scraped from RateMyProfessor and Reddit.
-- **User-friendly chatbot interface** built using Next.js for seamless interaction.
-- **GPT-3.5 powered responses** for course structure insights and feedback.
+![Next.js](https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000)
+![Tailwind CSS](https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4)
+![Shadcn UI](https://img.shields.io/badge/-Shadcn_UI-black?style=for-the-badge&logoColor=white&logo=shadcnui&color=000000)
+![Zod](https://img.shields.io/badge/-Zod-black?style=for-the-badge&logoColor=white&logo=zod&color=3E67B1)
+![TypeScript](https://img.shields.io/badge/-Typescript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6)
+![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)
+![Axios](https://img.shields.io/badge/Axios-purple?style=for-the-badge&logo=axios&logoColor=white)
+![Uploadthing](https://img.shields.io/badge/Uploadthing-red?style=for-the-badge&logo=&logoColor=white)
 
 ---
 
-### **Getting Started**
+## 🛠️ *Getting Started*
 
-To get started with ProfGPT, follow these steps:
+First, run the development server:
 
-#### **Prerequisites**
+⁠ bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+ ⁠
 
-- Node.js (v14.x or higher)
-- Python (v3.8 or higher)
-- OpenAI API key
-- RateMyProfessor and Reddit API credentials (for scraping professor reviews)
-- Next.js installed
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-#### **Installation**
+You can start editing the page by modifying ⁠ app/page.tsx ⁠. The page will auto-update as you edit the file.
 
-1. **Clone the Repository**
-
-   ```bash
-   git clone https://github.com/your-username/prof-gpt.git
-   cd prof-gpt
-   ```
-
-2. **Install Dependencies**
-
-   In the root directory, run the following command to install backend dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-   Then, navigate to the frontend directory and install the Next.js dependencies:
-
-   ```bash
-   cd frontend
-   npm install
-   ```
-
-3. **Set Up Environment Variables**
-
-   Create a `.env` file in the root directory and add your API keys for GPT-3.5, Reddit, and RateMyProfessor:
-
-   ```bash
-   OPENAI_API_KEY=your_openai_api_key
-   REDDIT_API_KEY=your_reddit_api_key
-   RMP_API_KEY=your_rmp_api_key
-   ```
-
-4. **Start the Backend (LangChain Model)**
-
-   In the root directory, start the LangChain model by running:
-
-   ```bash
-   python app.py
-   ```
-
-5. **Start the Frontend (Next.js App)**
-
-   Navigate to the frontend directory and start the Next.js application:
-
-   ```bash
-   cd frontend
-   npm run dev
-   ```
-
-6. **Access the Application**
-
-   Open your browser and go to `http://localhost:3000`. You should see the chat interface where you can interact with ProfGPT to get course recommendations based on your preferences.
+This project uses [⁠ next/font ⁠](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load *Inter*, a custom Google Font.
 
 ---
 
-### **Usage**
+## 📚 *Learn More*
 
-1. **Input Your Preferences**: Open the chat application, and provide details about your course preferences, strengths, and interests. You can ask the model questions like "Which courses are good for machine learning?" or "Which professor has the best reviews for Data Structures?"
+To learn more about *Next.js*, check out the following resources:
 
-2. **Get Personalized Suggestions**: The model will analyze your input and fetch relevant course and professor data, providing tailored course recommendations.
+•⁠  ⁠[Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API.
+•⁠  ⁠[Learn Next.js](https://nextjs.org/learn) - An interactive Next.js tutorial.
 
-3. **Refine Your Choices**: You can continue the conversation with the model to refine your course list or get more details about specific professors and course syllabi.
+You can also check out the [Next.js GitHub repository](https://github.com/vercel/next.js/). Your feedback and contributions are welcome!
 
 ---
 
-### **Future Enhancements**
-- Add more data sources for comprehensive professor and course reviews.
-- Implement student feedback features to continually improve course recommendations.
-- Integrate a recommendation engine for students based on their academic performance and career goals.
+## 🚀 *Deploy on Vercel*
 
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-
-Feel free to contribute and make this project even more powerful!
-
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
