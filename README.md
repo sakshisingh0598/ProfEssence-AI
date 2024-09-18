@@ -1,5 +1,3 @@
-Here is the corrected version of your README:
-
 ```markdown
 # ProfEssence-AI - Personalized Course Advisor
 
