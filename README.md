@@ -37,14 +37,16 @@ ProfEssence-AI simplifies the course selection process by combining *LangChain* 
 
 First, run the development server:
 
-⁠ bash
-npm run dev
-# or
+``` npm run dev
+
+or
 yarn dev
-# or
+
+or
 pnpm dev
-# or
-bun dev
+
+or
+bun dev ```
  ⁠
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
